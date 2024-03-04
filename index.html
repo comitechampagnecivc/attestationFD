@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participation prospection FD</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <style>
+        body {
+            visibility: hidden;
+        }
+    </style>
+    <script src="js/validatePassword.js"></script>
+</head>
+<body>
+    <body onload="validatePassword()"></body>
+    <header>
+        <img src="images/CIVC_Sign_Q.png" alt="Logo" class="logo">
+    </header>
+    <div class="container">
+        <h2>Liste des prospections obligatoires réalisées en 2023</h2>
+        <label for="numero_recoltant">Numéro de récoltant:</label>
+        <input type="text" id="numero_recoltant">
+        <button onclick="afficherZD()">Afficher les ZD propectées</button>
+        <div id="resultat"></div>
+    </div>
+
+    <script src="data/output.js"></script>
+    <script src="js/attestzd.js"></script>
+    
+</body>
+</html>
